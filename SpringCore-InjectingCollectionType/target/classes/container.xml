@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.example.Student" name="stdent1" >
+	
+		<property name="empName" value="Virat"></property>
+	
+		<property name="empPhones">
+		
+			<list>
+				<value>896589331</value>
+				<value>639784123</value>
+				<value>321469877</value>
+				<value>968693314</value>
+			</list>
+		
+		</property>
+		
+		<property name="empAddresses">
+		
+			<set>
+			
+				<value>MH</value>
+				<value>Humbai</value>
+				<value>Karnataka</value>
+				<value>Ap</value>
+			
+			</set>
+		
+		</property>
+		
+		<property name="empCourses">
+		
+			<map>
+				<entry key="java" value="2months" />
+				<entry key="py" value="5months" />
+				<entry key=".net" value="3months" />
+				<entry key="c++" value="8months" />
+				
+			</map>
+		
+		</property>
+	
+	</bean>
+
+
+
+</beans>
